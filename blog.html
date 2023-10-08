@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="css/principal.css">
     <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/bootstrap-5.3.2-dist/css/bootstrap.css">
 
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
@@ -48,7 +49,7 @@
 
     <!--Portada-->
 
-    <div class="container-all" id="move-content">
+    <d class="container-all" id="move-content">
 
     
     <div class="blog-container-cover">
@@ -56,7 +57,71 @@
             <h1>¡Encuentra tu desafio!</h1>
             <p>Desmuestra tus habilidades, gana expereciencia y dinero se el mejor y pon tus habilidades en accion.</p>
         </div>
+   
     </div>
+    <!-- Buscador-->
+   
+    <div class=" buscar-text button-buscar ">
+        <input type="text" class=" input-buscar" placeholder="Buscar...">
+        <button type="button" class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button type="button" style="margin: 10px;" class="btn btn-primary"
+        data-bs-toggle="modal" data-bs-target="#modal-filtro"
+        >
+        FILTROS DE BUSQUEDA
+        </button> 
+             
+    </div>
+
+    <!--MODAL-->
+
+         <!--filtro de opciones -->
+         <div class=" modal fade " id="modal-filtro" tabindex="-1" aria-hidden="true" aria-labelledby="label-modal-1">            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Busqueda Personalizada</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-4 ms-auto">
+                            <h6>Fecha</h6>
+                            <ul>
+                                <a href="/blog.html" target="_blank">Agosto</a><br>
+                                <a href="/blog.html" target="_blank">Septiembre</a><br>
+                                <a href="/blog.html" target="_blank">Octubre</a>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 ms-auto">
+                           <h6>Categoria</h6>
+                           <a href="/blog.html" target="_blank">Php</a><br>
+                           <a href="/blog.html" target="_blank">Python</a><br>
+                           <a href="/blog.html" target="_blank">Base de datos</a>
+                        </div>
+                        <div class="col-md-4 ms-auto">
+                            <h6>Precio Bs</h6>
+                            <a href="/blog.html" target="_blank">30 bs</a><br>
+                            <a href="/blog.html" target="_blank">50 bs</a><br>
+                            <a href="/blog.html" target="_blank">100 bs</a>
+                        </div>
+                        <div class="col-md-4 ms-auto">
+                            <h6>Dificultad</h6>
+                            <a href="/blog.html" target="_blank">Facil</a><br>
+                            <a href="/blog.html" target="_blank">Medio</a><br>
+                            <a href="/blog.html" target="_blank">Dificil</a><br>
+                            <a href="/blog.html" target="_blank">Experto</a>
+                        </div>
+                      
+                     
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
 
     <div class="container-post">
 
@@ -204,5 +269,6 @@
 </div>
 
     <script src="js/script.js"></script>
+    <script src="/css/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

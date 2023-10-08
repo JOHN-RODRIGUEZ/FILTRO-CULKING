@@ -21,7 +21,48 @@
     top: 0;
     left: 0;
 }
+.buscar-text{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+   
+   
+   
+   }
+.buscar-body{
+    position: relative;
+   
+}
+.input-buscar{
 
+
+    width: 500px;
+    padding: 8px;
+    padding-right: 35px;
+    border-radius: 5px;
+    border: 0;
+    outline: none;
+    font-size: 1rem;
+
+
+}
+
+.button-buscar{
+
+    background-color: #46a2fd;
+    padding: 10px 15px;
+    position: center;
+    border: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0 0px 0px 0;
+    color: #fff;
+    cursor: pointer;
+}
 .container-info-cover{
     max-width: 800px;
     height: 500px;
